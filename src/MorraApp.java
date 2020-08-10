@@ -10,7 +10,7 @@ public class MorraApp {
 
         // declare variables
         String oddOrEven;
-        String playAgain = "yes";
+        String playAgain = "";
         boolean flag = false;
         int userNumber;
         int round = 1;
@@ -34,7 +34,7 @@ public class MorraApp {
                 for (int i = 0; i < history.length; i++) {
                     history[i] = null;
                 }
-
+            }
                 do {
                     // user inputs odd / even and input validated
                     System.out.println("Would you like to be odd or even player?");
@@ -116,7 +116,7 @@ public class MorraApp {
                 // ask user if they want to play the game again
                 System.out.println("Would you like to play again?  Yes/No");
                 playAgain = scan.next();
-            }
+
         } while (playAgain.equalsIgnoreCase("yes"));
 
         // call printAllTimeHistory method
